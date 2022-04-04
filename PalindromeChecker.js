@@ -7,12 +7,12 @@ function palindrome(str) {
     //Palindrome algorithm
     for (let i = 0; i < (regexStr.length / 2); i++){
         console.log(regexStr[regexStr.length - 1 - i]);
-        if (regexStr[i] === regexStr[regexStr.length - 1 - i]){
-            return true;
+        if (regexStr[i] !== regexStr[regexStr.length - 1 - i]){
+            return false;
         }
     }
 
-    return false;
+    return true;
   }
    
-  console.log(palindrome("eye"));
+  console.log(palindrome("almoomla"));
